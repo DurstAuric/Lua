@@ -1,4 +1,4 @@
---[
+--[[
 Usage:
 local RGBHex = require(ModuleLocation/ModuleID)
 local R, G, B = RGBHex.ToRGB("#2C3E50") print(R, G, B)
@@ -8,7 +8,7 @@ local Hex = RGBHex.ToHex({44, 62, 80}) print(Hex)
 local Hex = RGBHex.ToHex({"44", "62", "80"}) print(Hex)
 -- OR
 local Hex = RGBHex.ToHex("44, 62, 80") print(Hex)
---]
+--]]
 
 local Functions = {}
 Functions.ToRGB = function(Hex) Hex = Hex:gsub("#", "") return tonumber("0x" .. Hex:sub(1, 2)), tonumber("0x" .. Hex:sub(3, 4)), tonumber("0x" .. Hex:sub(5, 6)) end
