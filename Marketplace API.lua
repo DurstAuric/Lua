@@ -331,6 +331,6 @@ return Services.MarketplaceService:GetProductInfo(AssetID, ProductType)
 end
 end
 function MarketplaceService:PlayerOwnsAsset(Player, AssetID)
-return Services.MaerketplaceService:PlayerOwnsAsset(Player, AssetID)
+return Services.MarketplaceService:PlayerOwnsAsset(Player, AssetID)
 end
 return MarketplaceService -- Why am I commenting this stuff? I never comment. It looks gross to me, but I'm _trying_ to be more _"organised"_ as some people would call it.																															-- Send noodles. Haw haw haw I'm so funny!!1 XDXdxxdXDxD
